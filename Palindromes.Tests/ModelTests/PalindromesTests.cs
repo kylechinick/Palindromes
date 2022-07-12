@@ -19,5 +19,12 @@ namespace Palindromes.Test
       Palindrome newPalindrome = new Palindrome("racecar");
       Assert.AreEqual(true, newPalindrome.PalindromeChecker());
     }
+
+    [TestMethod]
+    public void PalindromeChecker_ChecksIfPalindromeAltCasing_True()
+    {
+      Palindrome newPalindrome = new Palindrome("Racecar");
+      Assert.AreEqual(true, newPalindrome.PalindromeChecker());
+    }
   }
 }

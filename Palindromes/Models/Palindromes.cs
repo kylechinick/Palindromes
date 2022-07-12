@@ -20,7 +20,7 @@ namespace Palindromes.Models
       Console.WriteLine(reversedArray);
       for (int i = 0; i < letterArray.Length; i++)
       {
-        if (letterArray[i] != reversedArray[i])
+        if (Char.ToLower(letterArray[i]) != Char.ToLower(reversedArray[i]))
         {
           return false;
         }
