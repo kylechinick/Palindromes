@@ -12,5 +12,12 @@ namespace Palindromes.Test
       Palindrome newPalindrome = new Palindrome("Hello");
       Assert.AreEqual(false, newPalindrome.PalindromeChecker());
     }
+
+    [TestMethod]
+    public void PalindromeChecker_ChecksIfPalindrome_True()
+    {
+      Palindrome newPalindrome = new Palindrome("racecar");
+      Assert.AreEqual(true, newPalindrome.PalindromeChecker());
+    }
   }
 }
