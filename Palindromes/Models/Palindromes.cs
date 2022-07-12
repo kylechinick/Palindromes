@@ -13,7 +13,7 @@ namespace Palindromes.Models
 
     public bool PalindromeChecker()
     {
-      return true;
+      return false;
     }
   }
 }
