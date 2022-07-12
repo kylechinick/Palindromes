@@ -16,8 +16,6 @@ namespace Palindromes.Models
       char[] letterArray = _userWord.ToCharArray();
       char[] reversedArray = _userWord.ToCharArray();
       Array.Reverse(reversedArray);
-      Console.WriteLine(letterArray);
-      Console.WriteLine(reversedArray);
       for (int i = 0; i < letterArray.Length; i++)
       {
         if (Char.ToLower(letterArray[i]) != Char.ToLower(reversedArray[i]))
